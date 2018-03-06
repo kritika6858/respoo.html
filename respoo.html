@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="respo.css">
+<link rel="stylesheet" href="actual.css" >
+ 
+
+
+
+
+
+
+
+</head>
+<body>
+
+<div class="header";>
+  <img src="header.jpg" style="width:1000% height:auto">
+</div>
+</div>
+
+<div class="topnav" id="myTopnav">
+     <div class="Home">
+     	<button class="dropbtn" onclick="myFunction()">Home
+        <i class="fa fa-caret-down"></i>
+     	</button>
+        <div class="Home-content">  
+        <div class="dropdown-content" id="mydropdown">
+        <a href="#">abcd</a>
+        </div>
+        </div>
+
+     <a href="#Alumni" class="active">Alumni</a>
+     <a href="# Central Facilities" class="active"> Facilities</a>
+     <a href="#Placements" class="active"> Placement</a>
+     <a href="#Departments" class="active">Departments</a>
+     <a href="#Staff Profile" class="active">Staff Profile</a>
+     <a href="#Skill Training Center" class="active">     Skill Training Center</a>
+     <a href="#Admission" class="active">Admission</a>
+     <a href="Contact Us" class="active">Contact Us</a>
+     <a href="#Anti=Sexual Harassment Policy" class="active">Anti-Ragging Policy</a>
+      
+   <div class="Administration">
+   <button class="dropbtn" onclick="myFunction()">Administration
+   <i class="fa fa-caret-down"></i>
+   </button>
+   <div class="Administration-content">
+      <div class="dropdown-content" id="mydropdown">
+      <a href="#">College Administration</a>
+      <a href="#">Enquiry Committees</a>
+      <a href="#">Managing Committees</a>
+       <a href="#">Teaching Commitees</a>
+        <a href="#">Non-Teaching Committees</a>
+         <a href="#">Financial Committees</a>
+          <a href="#">CDRT Committees</a>
+    </div>
+  </div>
+  </div> 
+ 
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="clg.jpg" style="width:50px height:50px">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="clg1.jpg" style="width:50px height:50px">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="clg2.jpg" style="width:50px height:50px" >
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+
+
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<iframe src="map.jpg" height="600" width="700" align="left"></iframe>
+
+
+<div>
+  <h2 class="pos_left" About GNDPC>
+  <h2 class="pos_right" QWERRR>    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";}
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
